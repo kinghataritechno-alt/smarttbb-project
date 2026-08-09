@@ -1,10 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { supabase } from '@/app/lib/supabase/client'
+import { supabase } from '../lib/supabase/client'
 
 export default function ConstructionManager() {
-  const supabase = createClient()
+  const [logs, setLogs] = useState<any[]>([])
+  const [loading, setLoading] = useState(false)
 
   const [logs, setLogs] = useState<any[]>([])
   const [loading, setLoading] = useState(false)
