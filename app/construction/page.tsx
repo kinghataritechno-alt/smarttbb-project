@@ -7,9 +7,6 @@ export default function ConstructionManager() {
   const [logs, setLogs] = useState<any[]>([])
   const [loading, setLoading] = useState(false)
 
-  const [logs, setLogs] = useState<any[]>([])
-  const [loading, setLoading] = useState(false)
-
   // Standard Form States
   const [projectName, setProjectName] = useState('')
   const [zoneArea, setZoneArea] = useState('')
